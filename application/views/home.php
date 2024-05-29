@@ -12,23 +12,58 @@
 <body class="bg-black">
     <?php $this->load->view('_partials/navbar.php'); ?>
 
-    <div class="relative h-[700px] border-b border-neutral-500 bg-cover p-20" style="background-image: url('https://wallpapercave.com/wp/wp11089675.jpg');">
+    <div class="relative h-[900px] border-b border-neutral-600 bg-cover p-20" style="background-image: url('https://wallpapercave.com/wp/wp11089675.jpg');">
         <div class="absolute inset-0 bg-black opacity-70"></div>
-        <div class="relative mt-20 z-10">
+        <div class="relative mt-32 z-10">
             <h1 data-aos="zoom-in" data-aos-duration="900" class="text-8xl dm-sans text-neutral-200 text-center tracking-tight font-bold max-w-2xl mx-auto">Welcome to Sebelah <span class="text-red-500">Layar</span></h1>
             <p data-aos="zoom-in" data-aos-duration="2000" class="text-center max-w-4xl mx-auto text-lg mt-3 archivo text-neutral-200">Next to the screen is a website that reveals a movie that has been released and aired in this world, even we collect a lot of information about movie synopsis, to information on how many viewers like a movie.</p>
             <div class="flex items-center justify-center mt-5 gap-2">
                 <a data-aos="zoom-in" data-aos-duration="2400" class="flex justify-center" href="">
-                    <button class="px-5 py-2 text-neutral-200 archivo rounded-full hover:scale-95 duration-300 hover:bg-red-600 bg-red-500">read More</button>
+                    <button class="px-5 py-2 text-neutral-200 archivo text-sm rounded-full hover:scale-95 duration-300 hover:bg-red-600 bg-red-500">read More</button>
                 </a>
                 <a data-aos="zoom-in" data-aos-duration="3000" href="<?= site_url('auth/login') ?>">
-                    <button class="border px-7 py-2 text-neutral-200 rounded-full hover:scale-95 duration-300 border-neutral-200">Login</button>
+                    <button class="border px-7 py-2 text-neutral-200 rounded-full text-sm archivo hover:scale-95 duration-300 border-neutral-200">Login</button>
                 </a>
             </div>
             <p data-aos="zoom-in" data-aos-duration="3000" class="text-center text-red-500 mt-10 text-sm font-normal">telah di percaya banyak orang</p>
         </div>
     </div>
 
+    <!-- Reviews List -->
+    <div>
+        <h1 class="text-neutral-200 dm-sans font-semibold text-3xl mt-28 text-center">Reviews And Comment</h1>
+        <p class="text-neutral-300 mt-4 text-center max-w-lg mx-auto archivo">give opinions. any comments as well as suggestions and criticism, we are very receptive to it for our change</p>
+        <div class="flex justify-center">
+            <div id="reviewsList" class="carousel-container-automatic flex gap-12 mt-24 rounded-3xl"></div>
+        </div>
+    </div>
+
+    <section title="support-people-programmer">
+        <div class="flex items-center justify-center gap-10">   
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <section title="people-create-project" class="border-b border-neutral-900">
+        <div class="flex items-center justify-center mt-10 gap-16 p-20">
+            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716995476/r2eubcpjtbmlhjv0g4bp.png" width="500px" alt=""></div>
+            <div>
+                <h1 class="text-5xl text-neutral-200 font-semibold dm-sans">Hi, im Ronald Alexander</h1>
+                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">Hello! I'm Ronald Alexander, the creator of Sebelah Layar, a website dedicated to film synopses. My passion for cinema and storytelling inspired me to build a platform where movie enthusiasts can discover and explore the essence of films. Sebelah Layar is designed to provide concise and engaging summaries that capture the heart of each movie, making it easier for viewers to decide what to watch next.</p>
+            </div>
+        </div>
+    </section>
+
+    <section title="content-for-open-source">
+    <div class="flex items-center gap-10 p-32 border-b border-neutral-900 justify-center mt-12">
+        <div>
+            <h1 class=" text-5xl text-neutral-200 font-semibold dm-sans">Movie Synopsis website</h1>
+            <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website is officially open and can be used by anyone. we provide many features for describing or providing movie synopsis.</p>
+        </div>
+        <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716996671/sgjxts6nqa9ag67kgbck.png" width="600px" alt=""></div>
+    </div>
+    </section>
 
     <div title="for-categories">
         <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716756204/pcygaamltlqnefovly7m.png" alt="" class="w-min-full opacity-40 h-[1600px] mx-auto mt-60">
@@ -47,11 +82,6 @@
             <!-- <?php $this->load->view('home_movie.php'); ?> -->
         </div>
     </section>
-
-    <!-- Reviews List -->
-    <div class="flex justify-center">
-        <div id="reviewsList" class="carousel-container-automatic flex gap-12 mt-[1200px] rounded-3xl"></div>
-    </div>
 
     <div title="for-form-reviews">
         <div class="text-neutral-200 relative">
@@ -101,9 +131,10 @@
                 "p-8",
                 "rounded-xl",
                 "hover:bg-none",
+                "bg-neutral-950",
                 "hover:border",
                 "hover:border-neutral-800",
-                "hover:scale-105",
+                "hover:scale-95",
                 "duration-300",
                 "transition-all",
                 "hover:shadow-2xl",

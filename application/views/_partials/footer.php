@@ -10,7 +10,8 @@
 <body>
 	<footer class="foote bg-black">
 		<div class="text-neutral-200 text-center">
-			&copy; <?= Date('Y') ?> Beritacoding.com
+			&copy; <?= Date('Y') ?> Sebelah Layar 
+			<p class="text-sm text-neutral-400 mt-4 tracking-widest">Ronald | Denis | Denal</p>
 		</div>
 	</footer>
 </body>
