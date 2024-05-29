@@ -38,6 +38,17 @@
         </div>
     </div>
 
+    <section>
+        <div class="flex items-center mt-32 bg-neutral-950 border-b border-t border-neutral-900 p-20 justify-center gap-20">
+            <div>
+                <h1 class="text-4xl font-semibold dm-sans text-start text-neutral-200 leading-tight">students of <br>
+                 SMK MUHAMMADYAH 1 YOGYAKARTA</h1>
+                <p class="max-w-xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">I am a student of SMK MUHAMMADYAH 1 YOGYAKARTA who majors in Software Engineering. I really like majoring in Software Engineering because the digital world is very broad.</p>
+            </div>
+            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717001528/pf2frcn8tujynmvxqrho.png" width="550px" alt=""></div>
+        </div>
+    </section>
+
     <section title="people-create-project">
         <div class="flex items-center justify-center mt-10 gap-16 p-20">
             <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716995476/r2eubcpjtbmlhjv0g4bp.png" width="500px" alt=""></div>
@@ -49,12 +60,12 @@
     </section>
 
     <section title="content-for-open-source">
-        <div class="flex items-center gap-10 p-32 border-b border-t bg-neutral-900 border-neutral-900 justify-center mt-12">
+        <div class="flex items-center gap-10 p-32 border-b border-t bg-neutral-950 border-neutral-900 justify-center mt-12">
             <div>
                 <h1 class=" text-5xl text-neutral-200 font-semibold dm-sans">Movie Synopsis website</h1>
                 <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website is officially open and can be used by anyone. we provide many features for describing or providing movie synopsis.</p>
             </div>
-            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716996671/sgjxts6nqa9ag67kgbck.png" width="600px" alt=""></div>
+            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716996671/sgjxts6nqa9ag67kgbck.png" width="700px" alt=""></div>
         </div>
     </section>
 
@@ -74,26 +85,30 @@
     </section>
 
     <div title="for-categories">
-        <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716756204/pcygaamltlqnefovly7m.png" alt="" class="w-min-full opacity-40 h-[1600px] mx-auto mt-80">
+        <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716756204/pcygaamltlqnefovly7m.png" alt="" class="w-full opacity-40 h-[1600px] mx-auto mt-60">
         <?php $this->load->view('section/categories.php'); ?>
     </div>
-
+<!-- 
     <section title="custom-section-import">
         <div class="relative" title="for-carousel-categories">
-            <h1 class="text-center text-5xl font-bold dm-sans mt-32 text-neutral-200">See Categories</h1>
+            <h1 class="text-center text-5xl font-bold dm-sans mt-52 text-neutral-200">See Categories</h1>
             <p class="text-center mt-5 archivo text-sm text-neutral-300">You can find our recommended Categories in this section. try to find what you want.</p>
             <div class="relative flex justify-center mt-14 max-w-[1700px] mx-auto">
                 <?php $this->load->view('section/categoriescarousel.php'); ?>
             </div>
         </div>
         <div title="for-product-items">
-            <!-- <?php $this->load->view('home_movie.php'); ?> -->
+            <?php $this->load->view('home_movie.php'); ?> 
         </div>
+    </section> -->
+
+    <section class="relative" title="for-faq-import-components">
+    <?php $this->load->view('section/faq.php'); ?> 
     </section>
 
     <div title="for-form-reviews">
         <div class="text-neutral-200 relative">
-            <div class="mt-[300px]">
+            <div class="mt-[100px]">
                 <h1 class="text-3xl dm-sans font-semibold mt-32 text-center">Send your Opini!</h1>
                 <p class="max-w-xl text-center archivo text-neutral-400 mt-3 mx-auto">Any opinions, inputs, conclusions, suggestions, and criticisms will be very influential for us in developing this website.</p>
             </div>
@@ -148,7 +163,7 @@
                 "hover:shadow-2xl",
                 "hover:shadow-neutral-600",
                 "border",
-                "border-neutral-900",
+                "border-neutral-950",
                 "shadow-3xl"
             );
             reviewElement.innerHTML = `
