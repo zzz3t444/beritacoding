@@ -59,7 +59,7 @@
     </section>
 
     <section title="support-people-programmer">
-        <div class="flex items-center justify-center mt-10 gap-12">
+        <div class="flex items-center justify-center mt-10 gap-20">
             <div class="flex items-center">
                 <img src="https://avatars.githubusercontent.com/u/113794999?v=4" class="border rounded-full relative border-neutral-800" width="400px" alt="">
                 <img src="https://avatars.githubusercontent.com/u/100127440?v=4" class="border rounded-full -ml-40 mt-60 border-neutral-800" width="400px" alt="">
@@ -68,7 +68,7 @@
                 <h1 class="text-neutral-200 dm-sans font-semibold text-5xl mt-28 text-start leading-tight">participants Contributions to <br>
                  this website</h1>
                 <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website was created with great collaboration in terms of website layout design to database needs.
-                    we invited @z3t444 to provide website design inspiration. and we invited @dzakyabdurhmn to determine a data relationship for this website. we are very grateful to these contributors.</p>
+                    we invited <span class="text-red-500">@z3t444</span> to provide website design inspiration. and we invited <span class="text-red-500">@dzakyabdurhmn</span> to determine a data relationship for this website. we are very grateful to these contributors.</p>
             </div>
         </div>
     </section>
