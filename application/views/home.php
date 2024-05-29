@@ -38,14 +38,7 @@
         </div>
     </div>
 
-    <section title="support-people-programmer">
-        <div class="flex items-center justify-center gap-10">   
-            <div></div>
-            <div></div>
-        </div>
-    </section>
-
-    <section title="people-create-project" class="border-b border-neutral-900">
+    <section title="people-create-project">
         <div class="flex items-center justify-center mt-10 gap-16 p-20">
             <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716995476/r2eubcpjtbmlhjv0g4bp.png" width="500px" alt=""></div>
             <div>
@@ -56,17 +49,32 @@
     </section>
 
     <section title="content-for-open-source">
-    <div class="flex items-center gap-10 p-32 border-b border-neutral-900 justify-center mt-12">
-        <div>
-            <h1 class=" text-5xl text-neutral-200 font-semibold dm-sans">Movie Synopsis website</h1>
-            <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website is officially open and can be used by anyone. we provide many features for describing or providing movie synopsis.</p>
+        <div class="flex items-center gap-10 p-32 border-b border-t bg-neutral-900 border-neutral-900 justify-center mt-12">
+            <div>
+                <h1 class=" text-5xl text-neutral-200 font-semibold dm-sans">Movie Synopsis website</h1>
+                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website is officially open and can be used by anyone. we provide many features for describing or providing movie synopsis.</p>
+            </div>
+            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716996671/sgjxts6nqa9ag67kgbck.png" width="600px" alt=""></div>
         </div>
-        <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716996671/sgjxts6nqa9ag67kgbck.png" width="600px" alt=""></div>
-    </div>
+    </section>
+
+    <section title="support-people-programmer">
+        <div class="flex items-center justify-center mt-10 gap-12">
+            <div class="flex items-center">
+                <img src="https://avatars.githubusercontent.com/u/113794999?v=4" class="border rounded-full relative border-neutral-800" width="400px" alt="">
+                <img src="https://avatars.githubusercontent.com/u/100127440?v=4" class="border rounded-full -ml-40 mt-60 border-neutral-800" width="400px" alt="">
+            </div>
+            <div>
+                <h1 class="text-neutral-200 dm-sans font-semibold text-5xl mt-28 text-start leading-tight">participants Contributions to <br>
+                 this website</h1>
+                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website was created with great collaboration in terms of website layout design to database needs.
+                    we invited @z3t444 to provide website design inspiration. and we invited @dzakyabdurhmn to determine a data relationship for this website. we are very grateful to these contributors.</p>
+            </div>
+        </div>
     </section>
 
     <div title="for-categories">
-        <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716756204/pcygaamltlqnefovly7m.png" alt="" class="w-min-full opacity-40 h-[1600px] mx-auto mt-60">
+        <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716756204/pcygaamltlqnefovly7m.png" alt="" class="w-min-full opacity-40 h-[1600px] mx-auto mt-80">
         <?php $this->load->view('section/categories.php'); ?>
     </div>
 
