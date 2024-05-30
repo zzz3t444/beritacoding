@@ -27,17 +27,17 @@
                 <form action="" method="post" class="bg-black border border-neutral-800 shadow-lg rounded-3xl p-8">
                     <div class="mb-4">
                         <label for="name" class="block text-gray-200 dm-sans font-medium mb-2">Your Name</label>
-                        <input type="text" name="name" class="border border-neutral-800 bg-black rounded-md px-4 py-2 w-full <?= form_error('name') ? 'border-red-500' : 'border-gray-300' ?>" placeholder="John Trengelly" value="<?= set_value('name') ?>" required maxlength="32" />
+                        <input type="text" name="name" class="border border-neutral-800 bg-black rounded-md text-white focus:outline-none px-4 py-2 w-full <?= form_error('name') ? 'border-red-500' : 'border-gray-300' ?>" placeholder="John Trengelly" value="<?= set_value('name') ?>" required maxlength="32" />
                         <div class="text-red-500 mt-1"><?= form_error('name') ?></div>
                     </div>
                     <div class="mb-4">
                         <label for="email" class="block text-gray-200 dm-sans font-medium mb-2">Your Email</label>
-                        <input type="email" name="email" class="border border-neutral-800 bg-black rounded-md px-4 py-2 w-full <?= form_error('email') ? 'border-red-500' : 'border-gray-300' ?>" placeholder="hello@jurnagency.com" value="<?= set_value('email') ?>" required />
+                        <input type="email" name="email" class="border border-neutral-800 bg-black rounded-md text-white focus:outline-none px-4 py-2 w-full <?= form_error('email') ? 'border-red-500' : 'border-gray-300' ?>" placeholder="hello@jurnagency.com" value="<?= set_value('email') ?>" required />
                         <div class="text-red-500 mt-1"><?= form_error('email') ?></div>
                     </div>
                     <div class="mb-4">
                         <label for="message" class="block text-gray-200 dm-sans font-medium mb-2">Message</label>
-                        <textarea name="message" class="border border-neutral-800 bg-black rounded-md px-4 py-2 w-full <?= form_error('message') ? 'border-red-500' : 'border-gray-300' ?>" rows="5" placeholder="Write your message" required><?= set_value('message') ?></textarea>
+                        <textarea name="message" class="border border-neutral-800 bg-black rounded-md text-white focus:outline-none px-4 py-2 w-full <?= form_error('message') ? 'border-red-500' : 'border-gray-300' ?>" rows="5" placeholder="Write your message" required><?= set_value('message') ?></textarea>
                         <div class="text-red-500 mt-1"><?= form_error('message') ?></div>
                     </div>
                     <div class="flex gap-4 mb-2">

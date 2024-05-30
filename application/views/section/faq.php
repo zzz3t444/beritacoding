@@ -11,7 +11,7 @@
 			<h1 class="text-3xl font-bold mb-6 text-center dm-sans">FAQ - Sebelah Layar</h1>
 			<div id="faq-container">
 				<div
-					class="faq-item border-b border-neutral-700 py-4"
+					class="faq-item border-b border-neutral-900 py-4"
 					onclick="toggleFaq(1)"
 				>
 					<h2 class="faq-question text-lg dm-sans font-semibold cursor-pointer">
@@ -27,7 +27,7 @@
 					</div>
 				</div>
 				<div
-					class="faq-item border-b border-neutral-700 py-4"
+					class="faq-item border-b border-neutral-900 py-4"
 					onclick="toggleFaq(2)"
 				>
 					<h2 class="faq-question text-lg dm-sans font-semibold cursor-pointer">
@@ -45,7 +45,7 @@
 					</div>
 				</div>
 				<div
-					class="faq-item border-b border-neutral-700 py-4"
+					class="faq-item border-b border-neutral-900 py-4"
 					onclick="toggleFaq(3)"
 				>
 					<h2 class="faq-question text-lg dm-sans font-semibold cursor-pointer">
@@ -62,7 +62,7 @@
 					</div>
 				</div>
 				<div
-					class="faq-item border-b border-neutral-700 py-4"
+					class="faq-item border-b border-neutral-900 py-4"
 					onclick="toggleFaq(4)"
 				>
 					<h2 class="faq-question text-lg dm-sans  font-semibold cursor-pointer">
@@ -80,7 +80,7 @@
 					</div>
 				</div>
 				<div
-					class="faq-item border-b border-neutral-700 py-4"
+					class="faq-item border-b border-neutral-900 py-4"
 					onclick="toggleFaq(5)"
 				>
 					<h2 class="faq-question text-lg dm-sans font-semibold cursor-pointer">

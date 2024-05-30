@@ -83,19 +83,6 @@
             </div>
         </div>
     </section>
-<!-- 
-    <section title="custom-section-import">
-        <div class="relative" title="for-carousel-categories">
-            <h1 class="text-center text-5xl font-bold dm-sans mt-52 text-neutral-200">See Categories</h1>
-            <p class="text-center mt-5 archivo text-sm text-neutral-300">You can find our recommended Categories in this section. try to find what you want.</p>
-            <div class="relative flex justify-center mt-14 max-w-[1700px] mx-auto">
-                <?php $this->load->view('section/categoriescarousel.php'); ?>
-            </div>
-        </div>
-        <div title="for-product-items">
-            <?php $this->load->view('home_movie.php'); ?> 
-        </div>
-    </section> -->
 
     <section class="relative" title="for-faq-import-components">
     <?php $this->load->view('section/faq.php'); ?> 
@@ -136,6 +123,7 @@
     AOS.init();
 </script>
 <script>
+    // send opini ss\ystem
     function displayReviews() {
         const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
         const reviewsList = document.getElementById("reviewsList");
@@ -208,7 +196,9 @@
     window.addEventListener("load", autoScrollCarousel);
 
 
-    // for limit text //
+
+    ///////////////////////////////////////////////////////////////////////////////////////
+    // for limit text input //
     const textarea = document.getElementById("review");
     const wordCountDisplay = document.getElementById("word-count");
     const maxWords = 40;
