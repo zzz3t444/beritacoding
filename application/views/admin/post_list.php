@@ -31,6 +31,7 @@
 					<tr>
 						<td>
 							<div class="dm-sans"><?= $movie->title ?></div>
+							<div class="dm-sans"><?= $movie->deskripsi ?></div>
 							<div class="text-gray archivo"><small><?= $movie->created_at ?><small></div>
 						</td>
 						<?php if($movie->draft === 'true'): ?>
