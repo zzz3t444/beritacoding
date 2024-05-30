@@ -17,8 +17,7 @@
         </div>
         <div>
             <ul class="flex items-center gap-5 justify-center mt-10">
-                <button class="px-8 py-2 hover:scale-95 duration-300 bg-sky-600 rounded-lg hover:bg-sky-700 text-neutral-200 archivo text-sm">Read More</button>
-                <button class="px-8 py-2 hover:scale-95 duration-300 border border-neutral-800 rounded-lg text-sm hover:border-neutral-500 text-neutral-200">Send Me</button>
+                <button class="w-60 py-2 hover:scale-95 duration-300 bg-sky-600 rounded-lg hover:bg-sky-700 text-neutral-200 archivo text-sm">Read More</button>
             </ul>
             <p class="text-neutral-400 text-center max-w-3xl mx-auto mt-8 archivo leading-7">Selamat datang di Sebelah Layar, destinasi utama Anda untuk menikmati dunia film dari sudut pandang yang berbeda! Kami adalah platform yang didedikasikan untuk menyediakan ulasan film</p>
             <p class="uppercase font-light text-center text-neutral-400 tracking-wider mt-20">rise 26 May 2024</p>

@@ -17,7 +17,7 @@
 				<a class="text-neutral-400 hover:text-neutral-100 transition-all duration-300" href="<?= site_url('movie') ?>">Movie</a>
 				<a class="text-neutral-400 hover:text-neutral-100 transition-all duration-300" href="<?= site_url('search') ?>">Cari</a>
 				<a class="text-neutral-400 hover:text-neutral-100 transition-all duration-300" href="<?= site_url('page/about') ?>">About</a>
-				<a class="text-neutral-400 hover:text-neutral-100 transition-all duration-300" href="<?= site_url('page/contact') ?>">Contact</a>
+				<a class="text-neutral-400 hover:text-neutral-100 transition-all duration-300" href="<?= site_url('page/contact') ?>">Feedback</a>
 			</ul>
 			<button class="bg-sky-600 px-8 py-2 hover:scale-95 duration-300 rounded-full">
 				<a class="text-sm text-neutral-200" href="<?= site_url('auth/login') ?>" style="margin-left:auto">Login</a>
