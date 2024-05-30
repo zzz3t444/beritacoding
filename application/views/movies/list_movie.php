@@ -33,10 +33,7 @@
 				</div>
 			<?php endforeach ?>
 		</div>
-
-		<div class="mt-6">
 			<?= $this->pagination->create_links(); ?>
-		</div>
 	</div>
 
 	<?php $this->load->view('_partials/footer.php'); ?>
