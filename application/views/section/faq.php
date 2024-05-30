@@ -7,7 +7,7 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
 	<div class="text-gray-200">
-		<div class="max-w-6xl mt-80 mx-auto p-6">
+		<div class="max-w-7xl mt-32 mx-auto p-6">
 			<h1 class="text-3xl font-bold mb-6 text-center dm-sans">FAQ - Sebelah Layar</h1>
 			<div id="faq-container">
 				<div
