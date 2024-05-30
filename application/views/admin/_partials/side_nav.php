@@ -30,6 +30,7 @@
 			<a href="<?= site_url('admin/setting') ?>">Setting</a>
 			<a href="<?= site_url('auth/logout') ?>">Logout</a>
 		</nav>
+		<?php $this->load->view('admin/_partials/footer.php') ?>
 	</aside>
 </body>
 
