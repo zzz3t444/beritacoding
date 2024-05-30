@@ -48,7 +48,7 @@ class Post extends CI_Controller
 
     public function new()
     {
-
+        $data['current_user'] = $this->auth_model->current_user();
         if ($this->input->method() === 'post') {
             $config['max_size'] = 2048;
             $config['allowed_types'] = "png|jpg|jpeg|gif";
