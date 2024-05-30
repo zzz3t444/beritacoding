@@ -37,7 +37,7 @@
 					</div>
 
 					<div class="grid w-full">
-						<label for="katagori_umur " class="dm-sans">katagori_umur*</label>
+						<label for="katagori_umur" class="dm-sans">katagori_umur*</label>
 						<input type="number" class="archivo border border-black p-2 " name="katagori_umur" placeholder="Judul artikel" required katagori_umur="Masukkan minial umur" />
 					</div>
 				</div>

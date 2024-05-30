@@ -3,8 +3,7 @@
 
 <head>
 	<?php $this->load->view('admin/_partials/head.php') ?>
-	<link rel="stylesheet" href="<?= base_url('assets/css/dashboard.css') ?>" />
-	
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -18,7 +17,7 @@
 				<a href="<?= site_url('admin/post/new') ?>" class="button archivo button-primary" role="button">+ Tulis Artikel</a>
 			</div>
 
-			<table class="table">
+			<table class="w-full">
 				<thead>
 					<tr>
 						<th class="archivo">Title</th>
@@ -39,7 +38,7 @@
 							<td class="text-center dm-sans text-green">Published</td>
 						<?php endif ?>
 						<td>
-							<div class="action">
+							<div>
 								<a href="<?= site_url('movie/show/'.$movie->slug) ?>" class="button button-small dm-sans" target="_blank" role="button">Preview</a>
 								<a href="<?= site_url('admin/post/edit/'.$movie->id) ?>" class="button button-small dm-sans" role="button">Edit</a>
 								<a href="#" 
