@@ -7,7 +7,7 @@ class Post extends CI_Controller
     {
         parent::__construct();
         $this->load->model('movie_model');
-        $this->load->model('auth_model');   
+        $this->load->model('auth_model');
         if (!$this->auth_model->current_user()) {
             redirect('auth/login');
         }
@@ -48,18 +48,44 @@ class Post extends CI_Controller
 
     public function new()
     {
-        $data['current_user'] = $this->auth_model->current_user();
-        $this->load->library('form_validation');
+
         if ($this->input->method() === 'post') {
+            $config['max_size'] = 2048;
+            $config['allowed_types'] = "png|jpg|jpeg|gif";
+            $config['remove_spaces'] = TRUE;
+            $config['encrypt_name'] = TRUE;
+            $config['upload_path'] = FCPATH . 'upload/gambar';
+
+            $this->load->library('upload');
+            $this->upload->initialize($config);
+
+
+
+
+            if (!$this->upload->do_upload('testing')) {
+                // NOTE untuk display error
+                echo  $this->upload->display_errors();
+            } else {
+
+                $uploaded_data = $this->upload->data();
+
+                echo 'success';
+            }
+
+
+            $data['current_user'] = $this->auth_model->current_user();
+            $this->load->library('form_validation');
             // TODO: Lakukan validasi sebelum menyimpan ke model
             $rules = $this->movie_model->rules();
             $this->form_validation->set_rules($rules);
 
- 
 
-            if ($this->form_validation->run() === FALSE) {
-                return $this->load->view('admin/post_new_form.php', $data);
-            }
+            // NOTE coba cek ulang validasi untuk upload gambar
+            // NOTE error validasi ketika upload gambar validasi mengembalikan nilai false
+
+            // if ($this->form_validation->run() === FALSE) {
+            //     return $this->load->view('admin/post_new_form.php', $data);
+            // }
 
             // generate unique id and slug
             $id = uniqid('', true);
@@ -74,9 +100,11 @@ class Post extends CI_Controller
                 'deskripsi' => $this->input->post('deskripsi'),
                 'genre' => $this->input->post('genre'),
                 'katagori_umur' => $this->input->post('katagori_umur'),
-                'casting' => $this->input->post('casting')
+                'casting' => $this->input->post('casting'),
+                'gambar' => $uploaded_data['file_name']
 
             ];
+
 
             $saved = $this->movie_model->insert($movie);
 
@@ -117,7 +145,7 @@ class Post extends CI_Controller
                 'genre' => $this->input->post('genre'),
                 'katagori_umur' => $this->input->post('katagori_umur'),
                 'casting' => $this->input->post('casting')
-                
+
             ];
             $updated = $this->movie_model->update($movie);
             if ($updated) {

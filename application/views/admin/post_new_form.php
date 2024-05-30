@@ -9,12 +9,12 @@
 
 <body>
 	<main class="main">
-		<?php $this->load->view('admin/_partials/side_nav.php') ?>
+		<!-- <?php $this->load->view('admin/_partials/side_nav.php') ?> -->
 
-		<div class="content">
+		<div class="content" style="margin-left: 12;">
 			<h1 class="dm-sans text-3xl font-bold">Write new Article</h1>
 
-			<form action="" method="POST">
+			<form action="<?php base_url('admin/post/new') ?>" method="POST" enctype="multipart/form-data">
 				<div class="flex items-center justify-center gap-10">
 					<div class="grid w-full">
 						<label for="title" class="dm-sans">Title*</label>
@@ -44,10 +44,13 @@
 
 				<label for="casting" class="dm-sans">casting</label>
 				<textarea name="casting" class="border border-black p-2" cols="30" rows="10" placeholder="Tuliskan isi pikiranmu..."></textarea>
+				<label for="">file</label>
+				<input type="file" name="testing">
 				<div>
-					<button type="submit" name="draft" class="button archivo" value="true">Save to Draft</button>
-					<button type="submit" name="draft" class="button archivo button-primary" value="false">Publish</button>
+					<button name="draft" class="button archivo" value="true">Save to Draft</button>
+					<button type="submit" name="draft" class="button archivo button-primary">Publish</button>
 				</div>
+
 			</form>
 		</div>
 	</main>
