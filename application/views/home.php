@@ -40,8 +40,8 @@
     <section>
         <div class="flex items-center mt-32 bg-neutral-950 border-b border-t border-neutral-900 p-20 justify-center gap-20">
             <div>
-                <h1 class="text-4xl font-semibold dm-sans text-start text-neutral-200 leading-tight">students of <br>
-                    SMK MUHAMMADYAH 1 YOGYAKARTA</h1>
+                <h1 class="text-5xl font-semibold dm-sans text-start text-neutral-200 leading-tight">Thanks for <br>
+                <span class="text-3xl">SMK MUHAMMADYAH 1 YOGYAKARTA</span></h1>
                 <p class="max-w-xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">I am a student of SMK MUHAMMADYAH 1 YOGYAKARTA who majors in Software Engineering. I really like majoring in Software Engineering because the digital world is very broad.</p>
             </div>
             <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717001528/pf2frcn8tujynmvxqrho.png" width="550px" alt=""></div>
@@ -49,7 +49,7 @@
     </section>
 
     <section title="people-create-project">
-        <div class="flex items-center justify-center mt-10 gap-16 p-20">
+        <div class="flex items-center justify-center mt-10 gap-16 p-14 pt-0">
             <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716995476/r2eubcpjtbmlhjv0g4bp.png" width="500px" alt=""></div>
             <div>
                 <h1 class="text-5xl text-neutral-200 font-semibold dm-sans">Hi, im Ronald Alexander</h1>
@@ -92,9 +92,8 @@
                         <h1 class="text-3xl dm-sans font-semibold mt-32 text-center">Send your Opini!</h1>
                         <p class="max-w-xl text-center archivo text-neutral-400 mt-3 mx-auto">Any opinions, inputs, conclusions, suggestions, and criticisms will be very influential for us in developing this website.</p>
                     </div>
-                    <div class="xl:flex gap-10 grid items-center justify-center mt-16">
-                        <section class="w-full max-w-4xl mx-auto xl:mx-0 p-5 glassmorphism rounded-3xl shadow-md">
-                            <h2 class="text-2xl tracking-tight font-bold mb-6 dm-sans">Review Film</h2>
+                    <div class="xl:flex gap-10 grid items-center justify-cente">
+                        <div class="w-full max-w-4xl mx-auto xl:mx-0 p-5 glassmorphism rounded-3xl shadow-md">
                             <form id="reviewForm" class="mb-6" autocomplete="off">
                                 <div class="mb-4">
                                     <label for="name" class="block text-gray-200 dm-sans">Nama:</label>
@@ -111,7 +110,7 @@
                                     </button>
                                 </div>
                             </form>
-                        </section>
+                        </div>
                     </div>
                 </div>
             </div>
