@@ -93,7 +93,7 @@
                         <p class="max-w-xl text-center archivo text-neutral-400 mt-3 mx-auto">Any opinions, inputs, conclusions, suggestions, and criticisms will be very influential for us in developing this website.</p>
                     </div>
                     <div class="xl:flex gap-10 grid items-center justify-cente">
-                        <section class="w-full max-w-4xl mx-auto xl:mx-0 p-5 glassmorphism rounded-3xl shadow-md">
+                        <div class="w-full max-w-4xl mx-auto xl:mx-0 p-5 glassmorphism rounded-3xl shadow-md">
                             <form id="reviewForm" class="mb-6" autocomplete="off">
                                 <div class="mb-4">
                                     <label for="name" class="block text-gray-200 dm-sans">Nama:</label>
@@ -110,7 +110,7 @@
                                     </button>
                                 </div>
                             </form>
-                        </section>
+                        </div>
                     </div>
                 </div>
             </div>
