@@ -10,7 +10,7 @@
 	<main class="main">
 		<?php $this->load->view('admin/_partials/side_nav.php') ?>
 
-		<div class="content">
+		<div class="content ml-60">
 			<h1 class="dm-sans">List Artikel</h1>
 
 			<div class="toolbar">
