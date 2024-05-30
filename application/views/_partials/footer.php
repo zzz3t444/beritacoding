@@ -9,9 +9,9 @@
 
 <body>
 	<footer class="foote bg-black">
-		<div class="text-neutral-200 text-center">
+		<div class="text-neutral-200 mt-20 text-center">
 			&copy; <?= Date('Y') ?> Sebelah Layar 
-			<p class="text-sm text-neutral-400 mt-4 tracking-widest">Ronald | Denis | Denal</p>
+			<p class="text-sm text-neutral-400 mt-4 tracking-widest">Ronald | Galih | Denal</p>
 		</div>
 	</footer>
 </body>
