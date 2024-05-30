@@ -18,9 +18,20 @@
             <div class="bg-red-500 text-white rounded-3xl h-[540px] p-6">
                 <h2 class="text-4xl font-bold mb-4 dm-sans">Contact Information</h2>
                 <div class="archivo">
-                <p><strong>Phone:</strong> +1234567890</p>
-                <p><strong>Email:</strong> support@uprankly.com</p>
-                <p><strong>Location:</strong> New York, USA</p>
+                <p><strong>Admin 1:</strong> Ronald Alexander</p>
+                <p><strong>Phone:</strong> +6289674398585</p>
+                <p><strong>Email:</strong> ronaldalexander272@gmail.com</p>
+                <p><strong>Location:</strong>Yogyakarta</p>
+                </br>
+                <p><strong>Admin 2:</strong> Muhammad Galih</p>
+                <p><strong>Phone:</strong> +62</p>
+                <p><strong>Email:</strong> support@gmail.com</p>
+                <p><strong>Location:</strong>Yogyakarta</p>
+                </br>
+                <p><strong>Admin 3:</strong> Denal</p>
+                <p><strong>Phone:</strong> +62</p>
+                <p><strong>Email:</strong> support@gamil.com</p>
+                <p><strong>Location:</strong>Yogyakarta</p>
                 </div>
             </div>
             <div class="md:col-span-2 max-w-3xl">
