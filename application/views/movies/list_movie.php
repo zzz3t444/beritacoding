@@ -13,12 +13,12 @@
 
 	<div class="container mx-auto my-8 p-8 bg-black shadow-md rounded-lg">
 		<h1 class="text-3xl font-bold text-neutral-200 mb-6">List Movie</h1>
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 			<?php foreach ($movies as $movie) : ?>
 				<div class="bg-neutral-900 rounded-lg shadow-lg overflow-hidden">
 					<div class="p-6">
 						<h2 class="text-xl font-bold text-white mb-2">
-							<?= $movie->title ? html_escape($movie->title) : "cobo sek" ?>
+							<?= $movie->title ? html_escape($movie->title) : "" ?>
 						</h2>
 						<p class="text-gray-400 mb-4">
 							Published at <?= $movie->created_at ?>
@@ -33,7 +33,6 @@
 				</div>
 			<?php endforeach ?>
 		</div>
-			<?= $this->pagination->create_links(); ?>
 	</div>
 
 	<?php $this->load->view('_partials/footer.php'); ?>

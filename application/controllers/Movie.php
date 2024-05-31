@@ -19,7 +19,7 @@ class Movie extends CI_Controller
         $config['base_url'] = site_url('/movie');
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->movie_model->get_published_count();
-        $config['per_page'] = 5;
+        $config['per_page'] = 100;
 
         $config['full_tag_open'] = '<div class="pagination">';
         $config['full_tag_close'] = '</div>';

@@ -9,11 +9,11 @@
 	<main class="main">
 		<?php $this->load->view('admin/_partials/side_nav.php') ?>
 
-		<div class="content">
+		<div class="content ml-52">
 			<h1>Movie is Empty</h1>
 			<p>No Movie to show. Please create new Movie.</p>
 
-			<div>
+			<div class="mt-5">
 				<a href="<?= site_url('admin/post/new') ?>" class="button button-primary">+ Create New Movie</a>
 			</div>
 
