@@ -44,13 +44,21 @@
 
 				<label for="casting" class="dm-sans">casting</label>
 				<textarea name="casting" class="border border-black p-2" cols="30" rows="10" placeholder="Tuliskan isi pikiranmu..."></textarea>
-				<label for="">file</label>
-				<input type="file" name="testing">
+
 				<div>
+					<label for="">file</label>
+					<input type="file" name="testing">
+				</div>
+
+				<div class="mt-5">
+					<label for="url_movie">URL</label>
+					<input class="-mt-3 border border-neutral-500 p-2" type="text" name="url_movie" id="" placeholder="URL">
+				</div>
+
+				<div class="mt-5">
 					<button name="draft" class="button archivo" value="true">Save to Draft</button>
 					<button type="submit" name="draft" class="button archivo button-primary">Publish</button>
 				</div>
-
 			</form>
 		</div>
 	</main>
