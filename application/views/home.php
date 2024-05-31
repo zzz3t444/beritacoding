@@ -53,7 +53,7 @@
         <div class="flex items-center justify-center mt-10 gap-16 p-14 pt-0">
             <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716995476/r2eubcpjtbmlhjv0g4bp.png" width="500px" alt=""></div>
             <div>
-                <h1 class="text-5xl text-neutral-200 font-semibold dm-sans">Hi, im Ronald Alexander</h1>
+                <h1 class="text-5xl text-neutral-200 font-semibold dm-sans">Hi, im <span class="text-sky-600">Ronald Alexander</span></h1>
                 <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">Hello! I'm Ronald Alexander, the creator of Sebelah Layar, a website dedicated to film synopses. My passion for cinema and storytelling inspired me to build a platform where movie enthusiasts can discover and explore the essence of films. Sebelah Layar is designed to provide concise and engaging summaries that capture the heart of each movie, making it easier for viewers to decide what to watch next.</p>
             </div>
         </div>
@@ -81,7 +81,7 @@
             <div>
                 <h1 class="text-neutral-200 dm-sans font-semibold text-5xl mt-28 text-start leading-tight">participants Contributions to <br>
                     this website</h1>
-                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website was created with good collaboration in terms of website layout design to database needs. we invited <span class="text-sky-600">@z3t444</span> to provide inspiration for website design, we invited <span class="text-sky-600">@dzakyabdurhmn</span> to determine data relations on this website, and we invited <span class="text-sky-600">@ridhoarrahmann</span> for consultation on the problems of making this website. we are very grateful to these contributors.</p>
+                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website was created with good collaboration in terms of website layout design to database needs. we invited <span class="text-sky-600 hover:text-purple-500 duration-100"><a href="https://github.com/z3t444" target="_blank">@z3t444</a></span> to provide inspiration for website design, we invited <span class="text-sky-600 hover:text-purple-500 duration-100"><a href="https://github.com/dzakyabdurhmn" target="_blank">@dzakyabdurhmn</a></span> to determine data relations on this website, and we invited <span class="text-sky-600 hover:text-purple-500 duration-100"><a href="https://github.com/ridhoarrahmann" target="_blank">@ridhoarrahmann</a></span> for consultation on the problems of making this website. we are very grateful to these contributors.</p>
             </div>
         </div>
     </section>
