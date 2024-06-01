@@ -18,7 +18,7 @@ class Movie_model extends CI_Model
                 ->get_where($this->_table, ['draft' => 'FALSE']);
         } else {
             $query =  $this->db
-                ->get_where($this->_table, ['draft' => 'FALSE'], $limit, $offset);
+                ->get_where($this->_table, ['draft' => ''], $limit, $offset);
         }
         return $query->result();
     }

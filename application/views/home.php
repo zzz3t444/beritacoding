@@ -45,7 +45,7 @@
                 </h1>
                 <p class="max-w-xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">I am a student of SMK MUHAMMADYAH 1 YOGYAKARTA who majors in Software Engineering. I really like majoring in Software Engineering because the digital world is very broad.</p>
             </div>
-            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717001528/pf2frcn8tujynmvxqrho.png" width="550px" alt=""></div>
+            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717001528/pf2frcn8tujynmvxqrho.png" width="600px" alt=""></div>
         </div>
     </section>
 
@@ -73,10 +73,10 @@
         <div class="flex items-center justify-center mt-10 gap-20">
             <div class="flex items-center">
                 <div class="flex items-center relative">
-                    <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717141387/cqqazwvbpvfxrrnkjbrd.png" class="border bg-black  rounded-full relative border-neutral-800" width="400px" alt="">
-                    <img src=" https://avatars.githubusercontent.com/u/113794999?v=4" class="border rounded-full -ml-40 mt-56 border-neutral-800" width="400px" alt="">
+                    <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717141387/cqqazwvbpvfxrrnkjbrd.png" class="border bg-black  rounded-full relative border-neutral-800" width="300px" alt="">
+                    <img src=" https://avatars.githubusercontent.com/u/113794999?v=4" class="border rounded-full -ml-40 mt-56 border-neutral-800" width="300px" alt="">
                 </div>
-                <img src="https://avatars.githubusercontent.com/u/100127440?v=4" class="border -z-10 rounded-full -ml-40 mt-[500px] border-neutral-800" width="400px" alt="">
+                <img src="https://avatars.githubusercontent.com/u/100127440?v=4" class="border -z-10 rounded-full -ml-40 mt-[500px] border-neutral-800" width="300px" alt="">
             </div>
             <div>
                 <h1 class="text-neutral-200 dm-sans font-semibold text-5xl mt-28 text-start leading-tight">participants Contributions to <br>
