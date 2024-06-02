@@ -101,7 +101,8 @@ class Post extends CI_Controller
                 'genre' => $this->input->post('genre'),
                 'katagori_umur' => $this->input->post('katagori_umur'),
                 'casting' => $this->input->post('casting'),
-                'gambar' => $uploaded_data['file_name']
+                'gambar' => $uploaded_data['file_name'],
+                'url' => $this->input->post('url')
 
             ];
 

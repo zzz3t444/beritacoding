@@ -51,8 +51,8 @@
 				</div>
 
 				<div class="mt-5">
-					<label for="url_movie">URL</label>
-					<input class="-mt-3 border border-neutral-500 p-2" type="text" name="url_movie" id="" placeholder="URL">
+					<label for="url">URL</label>
+					<input class="-mt-3 border border-neutral-500 p-2" type="text" name="url" id="" placeholder="URL">
 				</div>
 
 				<div class="mt-5">
