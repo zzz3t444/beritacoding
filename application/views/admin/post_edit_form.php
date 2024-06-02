@@ -26,6 +26,14 @@
 					</div>
 
 					<div>
+						<label class="dm-sans" for="deskripsi">deskripsi*</label>
+						<input type="text" name="deskripsi" class="border border-neutral-300 p-2<?= form_error('deskripsi') ? 'invalid' : '' ?>" value="<?= form_error('deskripsi') ? set_value('deskripsi') : $movie->deskripsi ?>" required maxlength="128" />
+						<div class="invalid-feedback">
+							<?= form_error('deskripsi') ?>
+						</div>
+					</div>
+
+					<div>
 						<label class="dm-sans" for="content">Konten</label>
 						<?php $content = form_error('content') ? set_value('content') : $movie->content ?>
 						<input type="hidden" name="content" value="<?= html_escape($content) ?>">

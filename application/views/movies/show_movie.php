@@ -43,12 +43,12 @@
 				<span class="font-semibold text-neutral-200	 archivo">Casting:</span> <?= $movie->casting ?>
 			</div>
 			<!-- Video Section -->
-			<div class="mb-4">
-				<video width="320" height="240" controls>
-					<source src="<?= $movie->url ?>" type="video/mp4">
-					<source src="movie.ogg" type="video/ogg">
-				</video>
-			</div>
+			<iframe type="text/html" 
+				width="640" 
+				height="385" 
+				src="<?= $movie->url ?>"
+				frameborder="0">
+			</iframe>
 
 		</div>
 	</div>
