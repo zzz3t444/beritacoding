@@ -59,10 +59,23 @@
         </div>
     </section>
 
+    <section title="other-team-sebelah-layar">
+        <div class="items-center flex justify-center mt-20 gap-10">
+            <ul class="grid">
+                <h1 class="text-5xl text-neutral-200 font-semibold dm-sans">My Team Project</h1>
+                <p class="archivo text-neutral-300 max-w-sm mt-8 leading-9">This is the project team that participated in the Sebelah Layar website project. </p>
+            </ul>
+            <ul class="flex items-center">
+                <img class="rounded-full mt-40" src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717395696/mbgxw2vfriwkw4q24wjv.jpg" width="400px" alt="">
+                <img class="rounded-full -ml-52 -mt-40" src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717395696/mbgxw2vfriwkw4q24wjv.jpg" width="400px" alt="">
+            </ul>
+        </div>
+    </section>
+
 
 
     <section title="support-people-programmer">
-        <div class="flex items-center justify-center p-20 pt-0 bg-neutral-950 gap-20">
+        <div class="flex items-center justify-center p-20 pt-0 mt-32 bg-neutral-950 gap-20">
             <div class="flex items-center">
                 <div class="flex items-center">
                     <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717141387/cqqazwvbpvfxrrnkjbrd.png" class="border bg-black  rounded-full relative border-neutral-800" width="300px" alt="">
@@ -84,7 +97,9 @@
                 <h1 class=" text-5xl text-neutral-200 font-semibold dm-sans">Movie Synopsis website</h1>
                 <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website is officially open and can be used by anyone. we provide many features for describing or providing movie synopsis.</p>
             </div>
-            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717055317/vu0hfd4m07jn8uhw6j9t.png" width="700px" alt=""></div>
+            <div>
+                <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717055317/vu0hfd4m07jn8uhw6j9t.png" width="700px" alt="">
+            </div>
         </div>
     </section>
 
