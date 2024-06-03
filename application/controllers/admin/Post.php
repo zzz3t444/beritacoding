@@ -59,33 +59,17 @@ class Post extends CI_Controller
             $this->load->library('upload');
             $this->upload->initialize($config);
 
-
-
-
             if (!$this->upload->do_upload('testing')) {
-                // NOTE untuk display error
                 echo  $this->upload->display_errors();
             } else {
-
                 $uploaded_data = $this->upload->data();
-
                 echo 'success';
             }
 
-
             $data['current_user'] = $this->auth_model->current_user();
             $this->load->library('form_validation');
-            // TODO: Lakukan validasi sebelum menyimpan ke model
             $rules = $this->movie_model->rules();
             $this->form_validation->set_rules($rules);
-
-
-            // NOTE coba cek ulang validasi untuk upload gambar
-            // NOTE error validasi ketika upload gambar validasi mengembalikan nilai false
-
-            // if ($this->form_validation->run() === FALSE) {
-            //     return $this->load->view('admin/post_new_form.php', $data);
-            // }
 
             // generate unique id and slug
             $id = uniqid('', true);
@@ -101,10 +85,9 @@ class Post extends CI_Controller
                 'genre' => $this->input->post('genre'),
                 'katagori_umur' => $this->input->post('katagori_umur'),
                 'casting' => $this->input->post('casting'),
-                'gambar' => $uploaded_data['file_name']
-
+                'gambar' => $uploaded_data['file_name'],
+                'url' => $this->input->post('url')
             ];
-
 
             $saved = $this->movie_model->insert($movie);
 
@@ -136,6 +119,17 @@ class Post extends CI_Controller
                 return $this->load->view('admin/post_edit_form.php', $data);
             }
 
+            // Handle file upload
+            $config['upload_path'] = './uploads/';
+            $config['allowed_types'] = 'gif|jpg|png';
+            $this->load->library('upload', $config);
+
+            if ($this->upload->do_upload('gambar')) {
+                $gambar = $this->upload->data('file_name');
+            } else {
+                $gambar = $data['movie']->gambar;
+            }
+
             $movie = [
                 'id' => $id,
                 'title' => $this->input->post('title'),
@@ -144,8 +138,9 @@ class Post extends CI_Controller
                 'deskripsi' => $this->input->post('deskripsi'),
                 'genre' => $this->input->post('genre'),
                 'katagori_umur' => $this->input->post('katagori_umur'),
-                'casting' => $this->input->post('casting')
-
+                'casting' => $this->input->post('casting'),
+                'gambar' => $gambar,
+                'url' => $this->input->post('url')
             ];
             $updated = $this->movie_model->update($movie);
             if ($updated) {
@@ -157,10 +152,17 @@ class Post extends CI_Controller
         $this->load->view('admin/post_edit_form.php', $data);
     }
 
+
     public function delete($id = null)
     {
         if (!$id) {
             show_404();
+        }
+
+        $movie = $this->movie_model->find($id);
+
+        if ($movie && file_exists(FCPATH . 'upload/gambar/' . $movie->gambar)) {
+            unlink(FCPATH . 'upload/gambar/' . $movie->gambar);
         }
 
         $deleted = $this->movie_model->delete($id);

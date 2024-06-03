@@ -125,6 +125,11 @@ class Movie_model extends CI_Model
                 'label' => 'Cast',
                 'rules' => ''
             ],
+            [
+                'field' => 'url',
+                'label' => 'url',
+                'rules' => ''
+            ],
         ];
     }
 }

@@ -38,13 +38,14 @@
     </div>
 
     <section>
-        <div class="flex items-center mt-32 bg-neutral-950 border-b border-t border-neutral-900 p-20 justify-center gap-20">
+        <div class="flex items-center mt-32 bg-neutral-950 p-20 justify-center gap-20">
             <div>
                 <h1 class="text-5xl font-semibold dm-sans text-start text-neutral-200 leading-tight">Thanks for <br>
-                <span class="text-3xl">SMK MUHAMMADYAH 1 YOGYAKARTA</span></h1>
+                    <span class="text-3xl">SMK MUHAMMADYAH 1 YOGYAKARTA</span>
+                </h1>
                 <p class="max-w-xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">I am a student of SMK MUHAMMADYAH 1 YOGYAKARTA who majors in Software Engineering. I really like majoring in Software Engineering because the digital world is very broad.</p>
             </div>
-            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717001528/pf2frcn8tujynmvxqrho.png" width="550px" alt=""></div>
+            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717001528/pf2frcn8tujynmvxqrho.png" width="600px" alt=""></div>
         </div>
     </section>
 
@@ -52,33 +53,52 @@
         <div class="flex items-center justify-center mt-10 gap-16 p-14 pt-0">
             <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1716995476/r2eubcpjtbmlhjv0g4bp.png" width="500px" alt=""></div>
             <div>
-                <h1 class="text-5xl text-neutral-200 font-semibold dm-sans">Hi, im Ronald Alexander</h1>
+                <h1 class="text-5xl text-neutral-200 font-semibold dm-sans">Hi, im <span class="text-sky-600">Ronald Alexander</span></h1>
                 <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">Hello! I'm Ronald Alexander, the creator of Sebelah Layar, a website dedicated to film synopses. My passion for cinema and storytelling inspired me to build a platform where movie enthusiasts can discover and explore the essence of films. Sebelah Layar is designed to provide concise and engaging summaries that capture the heart of each movie, making it easier for viewers to decide what to watch next.</p>
             </div>
         </div>
     </section>
 
-    <section title="content-for-open-source">
-        <div class="flex items-center gap-10 p-32 border-b border-t bg-neutral-950 border-neutral-900 justify-center mt-12">
-            <div>
-                <h1 class=" text-5xl text-neutral-200 font-semibold dm-sans">Movie Synopsis website</h1>
-                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website is officially open and can be used by anyone. we provide many features for describing or providing movie synopsis.</p>
-            </div>
-            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717055317/vu0hfd4m07jn8uhw6j9t.png" width="700px" alt=""></div>
+    <section title="other-team-sebelah-layar">
+        <div class="items-center flex justify-center mt-20 gap-10">
+            <ul class="grid">
+                <h1 class="text-5xl text-neutral-200 font-semibold dm-sans">My Team Project</h1>
+                <p class="archivo text-neutral-300 max-w-sm mt-8 leading-9">This is the project team that participated in the Sebelah Layar website project. </p>
+            </ul>
+            <ul class="flex items-center">
+                <img class="rounded-full mt-40" src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717395696/mbgxw2vfriwkw4q24wjv.jpg" width="400px" alt="">
+                <img class="rounded-full -ml-52 -mt-40" src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717395696/mbgxw2vfriwkw4q24wjv.jpg" width="400px" alt="">
+            </ul>
         </div>
     </section>
 
+
+
     <section title="support-people-programmer">
-        <div class="flex items-center justify-center mt-10 gap-20">
+        <div class="flex items-center justify-center p-20 pt-0 mt-32 bg-neutral-950 gap-20">
             <div class="flex items-center">
-                <img src="https://avatars.githubusercontent.com/u/113794999?v=4" class="border rounded-full relative border-neutral-800" width="400px" alt="">
-                <img src="https://avatars.githubusercontent.com/u/100127440?v=4" class="border rounded-full -ml-40 mt-60 border-neutral-800" width="400px" alt="">
+                <div class="flex items-center">
+                    <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717141387/cqqazwvbpvfxrrnkjbrd.png" class="border bg-black  rounded-full relative border-neutral-800" width="300px" alt="">
+                    <img src="https://avatars.githubusercontent.com/u/100127440?v=4" class="border rounded-full -ml-40 mt-56 border-neutral-800" width="300px" alt="">
+                </div>
+                <img src="https://avatars.githubusercontent.com/u/113794999?v=4" class="border -z rounded-full -ml-40 mt-[490px] border-neutral-800" width="300px" alt="">
             </div>
             <div>
                 <h1 class="text-neutral-200 dm-sans font-semibold text-5xl mt-28 text-start leading-tight">participants Contributions to <br>
                     this website</h1>
-                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website was created with great collaboration in terms of website layout design to database needs.
-                    we invited <span class="text-sky-600">@z3t444</span> to provide website design inspiration. and we invited <span class="text-sky-600">@dzakyabdurhmn</span> to determine a data relationship for this website. we are very grateful to these contributors.</p>
+                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website was created with good collaboration in terms of website layout design to database needs. we invited <span class="text-sky-600 hover:text-purple-500 duration-100"><a href="https://github.com/z3t444" target="_blank">@z3t444</a></span> to provide inspiration for website design, we invited <span class="text-sky-600 hover:text-purple-500 duration-100"><a href="https://github.com/dzakyabdurhmn" target="_blank">@dzakyabdurhmn</a></span> to determine data relations on this website, and we invited <span class="text-sky-600 hover:text-purple-500 duration-100"><a href="https://github.com/ridhoarrahmann" target="_blank">@ridhoarrahmann</a></span> for consultation on the problems of making this website. we are very grateful to these contributors.</p>
+            </div>
+        </div>
+    </section>
+
+    <section title="content-for-open-source">
+        <div class="flex items-center gap-10 p-32 justify-center mt-12">
+            <div>
+                <h1 class=" text-5xl text-neutral-200 font-semibold dm-sans">Movie Synopsis website</h1>
+                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website is officially open and can be used by anyone. we provide many features for describing or providing movie synopsis.</p>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717055317/vu0hfd4m07jn8uhw6j9t.png" width="700px" alt="">
             </div>
         </div>
     </section>

@@ -9,7 +9,7 @@
 	<main class="main">
 		<?php $this->load->view('admin/_partials/side_nav.php') ?>
 
-		<div class="content">
+		<div class="content ml-60">
 			<h1>Upload Avatar</h1>
 
 			<form action="" method="POST" enctype="multipart/form-data">
