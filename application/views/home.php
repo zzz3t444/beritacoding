@@ -59,18 +59,10 @@
         </div>
     </section>
 
-    <section title="content-for-open-source">
-        <div class="flex items-center gap-10 p-32 border-b border-t bg-neutral-950 border-neutral-900 justify-center mt-12">
-            <div>
-                <h1 class=" text-5xl text-neutral-200 font-semibold dm-sans">Movie Synopsis website</h1>
-                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website is officially open and can be used by anyone. we provide many features for describing or providing movie synopsis.</p>
-            </div>
-            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717055317/vu0hfd4m07jn8uhw6j9t.png" width="700px" alt=""></div>
-        </div>
-    </section>
+
 
     <section title="support-people-programmer">
-        <div class="flex items-center justify-center mt-10 gap-20">
+        <div class="flex items-center justify-center mt-10 bg-neutral-950 gap-20">
             <div class="flex items-center">
                 <div class="flex items-center relative">
                     <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717141387/cqqazwvbpvfxrrnkjbrd.png" class="border bg-black  rounded-full relative border-neutral-800" width="300px" alt="">
@@ -83,6 +75,16 @@
                     this website</h1>
                 <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website was created with good collaboration in terms of website layout design to database needs. we invited <span class="text-sky-600 hover:text-purple-500 duration-100"><a href="https://github.com/z3t444" target="_blank">@z3t444</a></span> to provide inspiration for website design, we invited <span class="text-sky-600 hover:text-purple-500 duration-100"><a href="https://github.com/dzakyabdurhmn" target="_blank">@dzakyabdurhmn</a></span> to determine data relations on this website, and we invited <span class="text-sky-600 hover:text-purple-500 duration-100"><a href="https://github.com/ridhoarrahmann" target="_blank">@ridhoarrahmann</a></span> for consultation on the problems of making this website. we are very grateful to these contributors.</p>
             </div>
+        </div>
+    </section>
+
+    <section title="content-for-open-source">
+        <div class="flex items-center gap-10 p-32 justify-center mt-12">
+            <div>
+                <h1 class=" text-5xl text-neutral-200 font-semibold dm-sans">Movie Synopsis website</h1>
+                <p class="max-w-2xl text-neutral-200 text-lg mt-6 archivo text-start leading-10">This website is officially open and can be used by anyone. we provide many features for describing or providing movie synopsis.</p>
+            </div>
+            <div><img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717055317/vu0hfd4m07jn8uhw6j9t.png" width="700px" alt=""></div>
         </div>
     </section>
 
