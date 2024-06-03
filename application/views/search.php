@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <?php $this->load->view('_partials/head.php'); ?>
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/search.css'); ?>">
     <!-- Include TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -11,8 +12,8 @@
 
     <div class="container mx-auto p-4">
         <div class="text-center mt-10">
-            <h1 class="text-2xl text-neutral-200 font-bold mb-4">Cari Film</h1>
-            <p class="mb-4 text-neutral-300">Tuliskan kata kunci artikel yang ingin kamu cari</p>
+            <h1 class="text-2xl text-neutral-200 font-bold dm-sans mb-4">Cari Film</h1>
+            <p class="mb-4 text-neutral-300 archivo">Tuliskan kata kunci artikel yang ingin kamu cari</p>
         </div>
         <form action="" method="get" class="grid items-center mb-6 mx-auto max-w-3xl">
             <input type="search" name="keyword" class=" p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Keyword.." value="<?= html_escape($keyword) ?>" required maxlength="32" />
@@ -20,7 +21,7 @@
         </form>
 
         <?php if ($search_result) : ?>
-            <div class="search-result">
+            <div class="search-result max-w-sm mx-auto mt-10">
                 <hr class="mb-4">
                 <?php foreach ($search_result as $movie) : ?>
                     <div class="mb-6">
@@ -43,5 +44,4 @@
 
     <?php $this->load->view('_partials/footer.php'); ?>
 </body>
-
 </html>
