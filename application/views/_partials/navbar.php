@@ -19,9 +19,11 @@
 				<a class="text-neutral-400 hover:text-neutral-100 transition-all duration-300" href="<?= site_url('page/about') ?>">About</a>
 				<a class="text-neutral-400 hover:text-neutral-100 transition-all duration-300" href="<?= site_url('page/contact') ?>">Feedback</a>
 			</ul>
-			<button class="bg-sky-600 px-8 py-2 hover:scale-95 duration-300 rounded-full">
-				<a class="text-sm text-neutral-200" href="<?= site_url('auth/login') ?>" style="margin-left:auto">Login</a>
-			</button>
+			<div>
+				<a class="text-sm text-neutral-200" href="<?= site_url('auth/login') ?>" style="margin-left:auto">
+					<button class="px-5 py-3 bg-sky-600 rounded-full">Login</button>
+				</a>
+			</div>
 	</div>
 	</nav>
 </body>
