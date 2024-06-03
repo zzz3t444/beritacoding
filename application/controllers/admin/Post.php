@@ -151,7 +151,7 @@ class Post extends CI_Controller
                 'id' => $id,
                 'title' => $this->input->post('title'),
                 'content' => $this->input->post('content'),
-                'draft' => $this->input->post('draft'),
+                'draft' => '',
                 'deskripsi' => $this->input->post('deskripsi'),
                 'genre' => $this->input->post('genre'),
                 'katagori_umur' => $this->input->post('katagori_umur'),
