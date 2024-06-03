@@ -26,7 +26,7 @@
                 <?php foreach ($search_result as $movie) : ?>
                     <div class="mb-6">
                         <h2 class="text-xl font-semibold">
-                            <a href="<?= site_url('movie/' . $movie->slug) ?>" class="text-blue-500 hover:underline"><?= html_escape($movie->title) ?></a>
+                            <a href="<?= site_url('movie/show/' . $movie->slug) ?>" class="text-sky-600 archivo hover:underline"><?= html_escape($movie->title) ?></a>
                         </h2>
                         <p class="text-gray-700"><?= strip_tags(substr($movie->content, 0, 200)) ?>...</p>
                     </div>
