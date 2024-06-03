@@ -111,11 +111,23 @@ class Post extends CI_Controller
         }
 
         if ($this->input->method() === 'post') {
+            // TODO: lakukan validasi data sebelum simpan ke model
             $rules = $this->movie_model->rules();
             $this->form_validation->set_rules($rules);
 
             if ($this->form_validation->run() === FALSE) {
                 return $this->load->view('admin/post_edit_form.php', $data);
+            }
+
+            // Handle file upload
+            $config['upload_path'] = './uploads/';
+            $config['allowed_types'] = 'gif|jpg|png';
+            $this->load->library('upload', $config);
+
+            if ($this->upload->do_upload('gambar')) {
+                $gambar = $this->upload->data('file_name');
+            } else {
+                $gambar = $data['movie']->gambar;
             }
 
             $movie = [
@@ -126,7 +138,9 @@ class Post extends CI_Controller
                 'deskripsi' => $this->input->post('deskripsi'),
                 'genre' => $this->input->post('genre'),
                 'katagori_umur' => $this->input->post('katagori_umur'),
-                'casting' => $this->input->post('casting')
+                'casting' => $this->input->post('casting'),
+                'gambar' => $gambar,
+                'url' => $this->input->post('url')
             ];
             $updated = $this->movie_model->update($movie);
             if ($updated) {
@@ -137,6 +151,7 @@ class Post extends CI_Controller
 
         $this->load->view('admin/post_edit_form.php', $data);
     }
+
 
     public function delete($id = null)
     {
