@@ -111,6 +111,23 @@ class Post extends CI_Controller
         }
 
         if ($this->input->method() === 'post') {
+            // FILE UPLOAD
+            $config['max_size'] = 2048;
+            $config['allowed_types'] = "png|jpg|jpeg|gif";
+            $config['remove_spaces'] = TRUE;
+            $config['encrypt_name'] = TRUE;
+            $config['upload_path'] = FCPATH . 'upload/gambar';
+
+            $this->load->library('upload');
+            $this->upload->initialize($config);
+
+            if (!$this->upload->do_upload('gambar')) {
+                echo  $this->upload->display_errors();
+            } else {
+                $uploaded_data = $this->upload->data();
+                echo 'success';
+            }
+
             // TODO: lakukan validasi data sebelum simpan ke model
             $rules = $this->movie_model->rules();
             $this->form_validation->set_rules($rules);
@@ -120,15 +137,15 @@ class Post extends CI_Controller
             }
 
             // Handle file upload
-            $config['upload_path'] = './uploads/';
-            $config['allowed_types'] = 'gif|jpg|png';
-            $this->load->library('upload', $config);
+            // $config['upload_path'] = './uploads/';
+            // $config['allowed_types'] = 'gif|jpg|png';
+            // $this->load->library('upload', $config);
 
-            if ($this->upload->do_upload('gambar')) {
-                $gambar = $this->upload->data('file_name');
-            } else {
-                $gambar = $data['movie']->gambar;
-            }
+            // if ($this->upload->do_upload('gambar')) {
+            //     $gambar = $this->upload->data('file_name');
+            // } else {
+            //     $gambar = $data['movie']->gambar;
+            // }
 
             $movie = [
                 'id' => $id,
@@ -139,7 +156,7 @@ class Post extends CI_Controller
                 'genre' => $this->input->post('genre'),
                 'katagori_umur' => $this->input->post('katagori_umur'),
                 'casting' => $this->input->post('casting'),
-                'gambar' => $gambar,
+                'gambar' => $uploaded_data['file_name'],
                 'url' => $this->input->post('url')
             ];
             $updated = $this->movie_model->update($movie);

@@ -74,7 +74,7 @@
 
                     <div>
                         <label class="dm-sans" for="url">URL</label>
-                        <input type="url" name="url" class="border border-neutral-300 p-2<?= form_error('url') ? 'invalid' : '' ?>" value="<?= form_error('url') ? set_value('url') : $movie->url ?>" required maxlength="128" />
+                        <input type="url" name="url" class="border border-neutral-300 p-2<?= form_error('url') ? 'invalid' : '' ?>" required maxlength="128" />
                         <div class="invalid-feedback">
                             <?= form_error('url') ?>
                         </div>
@@ -97,13 +97,29 @@
                     theme: 'snow',
                     modules: {
                         toolbar: [
-                            [{ header: [1, 2, 3, 4, 5, 6, false] }],
-                            [{ font: [] }],
+                            [{
+                                header: [1, 2, 3, 4, 5, 6, false]
+                            }],
+                            [{
+                                font: []
+                            }],
                             ["bold", "italic"],
                             ["link", "blockquote", "code-block", "image"],
-                            [{ list: "ordered" }, { list: "bullet" }],
-                            [{ script: "sub" }, { script: "super" }],
-                            [{ color: [] }, { background: [] }],
+                            [{
+                                list: "ordered"
+                            }, {
+                                list: "bullet"
+                            }],
+                            [{
+                                script: "sub"
+                            }, {
+                                script: "super"
+                            }],
+                            [{
+                                color: []
+                            }, {
+                                background: []
+                            }],
                         ]
                     },
                 });
