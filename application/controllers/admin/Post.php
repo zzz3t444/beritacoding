@@ -166,6 +166,7 @@ class Post extends CI_Controller
 
         $deleted = $this->movie_model->delete($id);
         if ($deleted) {
+            unlink(base_url.’/upload/gambar/’.$movie->gambar);
             $this->session->set_flashdata('message', 'movie was deleted');
             redirect('admin/post');
         }
