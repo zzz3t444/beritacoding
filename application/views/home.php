@@ -38,7 +38,7 @@
     </div>
 
     <section>
-        <div class="flex items-center mt-32 bg-neutral-950 border-b border-t border-neutral-900 p-20 justify-center gap-20">
+        <div class="flex items-center mt-32 bg-neutral-950 p-20 justify-center gap-20">
             <div>
                 <h1 class="text-5xl font-semibold dm-sans text-start text-neutral-200 leading-tight">Thanks for <br>
                     <span class="text-3xl">SMK MUHAMMADYAH 1 YOGYAKARTA</span>
@@ -62,13 +62,13 @@
 
 
     <section title="support-people-programmer">
-        <div class="flex items-center justify-center mt-10 bg-neutral-950 gap-20">
+        <div class="flex items-center justify-center p-20 pt-0 bg-neutral-950 gap-20">
             <div class="flex items-center">
-                <div class="flex items-center relative">
+                <div class="flex items-center">
                     <img src="https://res.cloudinary.com/ddy7p8yrj/image/upload/v1717141387/cqqazwvbpvfxrrnkjbrd.png" class="border bg-black  rounded-full relative border-neutral-800" width="300px" alt="">
-                    <img src=" https://avatars.githubusercontent.com/u/113794999?v=4" class="border rounded-full -ml-40 mt-56 border-neutral-800" width="300px" alt="">
+                    <img src="https://avatars.githubusercontent.com/u/100127440?v=4" class="border rounded-full -ml-40 mt-56 border-neutral-800" width="300px" alt="">
                 </div>
-                <img src="https://avatars.githubusercontent.com/u/100127440?v=4" class="border -z-10 rounded-full -ml-40 mt-[500px] border-neutral-800" width="300px" alt="">
+                <img src="https://avatars.githubusercontent.com/u/113794999?v=4" class="border -z rounded-full -ml-40 mt-[490px] border-neutral-800" width="300px" alt="">
             </div>
             <div>
                 <h1 class="text-neutral-200 dm-sans font-semibold text-5xl mt-28 text-start leading-tight">participants Contributions to <br>
